@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="fonts/css/fontello.css">
+</head>
+
+<body>
+    <main class="w-full relative h-[100vh] overflow-hidden">
+        <section id="signUp" class="duration-300 w-full h-[100vh] flex flex-wrap bg-[#25343d] p-5 md:p-10 lg:py-[2%] lg:px-[15%] md:gap-10 absolute top-0 left-0">
+            <div class="w-full h-14 flex ">
+                <span  class="w-1/2 h-full flex justify-center items-center bg-[#1ab088] text-white cursor-pointer hover:bg-[#179c78] hover:text-white duration-500">Sign Up</span>
+                <span id="moveToLogin" class="w-1/2 h-full flex justify-center items-center bg-[#435359] text-[#9fb3a6] cursor-pointer hover:bg-[#179c78] hover:text-white duration-500">Log In</span>
+            </div>
+            <div class="w-full h-16 flex justify-center items-center">
+                <h1 class="text-white text-2xl md:text-3xl  lg:text-4xl">Sign Up for Free</h1>
+            </div>
+            <div class="w-full flex flex-wrap gap-4 md:gap-0 lg:gap-0">
+                <div id="moshkel" class="w-full flex-wrap flex justify-between  ">
+                    <input class="inputSignup w-[48%]  bg-transparent  h-10 md:h-14 lg:h-16  border text-white ps-3 outline-none " type="text" name="" id="signupFirstname" placeholder="First Name">
+                    <input class="inputSignup w-[48%]  bg-transparent h-10 md:h-14 lg:h-16   border text-white ps-3 outline-none " type="text" name="" id="signupLastname" placeholder="Last Name">
+                    <span id="signupErrorName" class="w-full text-red-600 text-sm py-2 h-10"></span>
+                </div>
+                <div class="w-full flex flex-wrap  ">
+                    <input id="signupEmail" class="inputSignup h-10 md:h-14 lg:h-16  w-full bg-transparent border text-white ps-3 outline-none " type="text" placeholder="Email Address">
+                    <span id="signupErrorEmail" class="w-full text-red-600 text-sm py-2 h-10"></span>
+                </div>
+                <div class="w-full  flex flex-wrap  ">
+                    <input id="signupPassword" class="inputSignup h-10 md:h-14  lg:h-16 w-full bg-transparent border text-white ps-3 outline-none " type="text" placeholder="Set A Password">
+                    <span id="signupErrorPassword" class="w-full text-red-600 text-sm py-2 h-10"></span>
+                </div>
+            </div>
+            <div class="w-full flex justify-center items-center h-16">
+                <button id="signupButton" class="bg-[#1ab088] flex mt-5 md:mt-0 justify-center items-center text-white w-full h-full text-2xl hover:bg-[#179c78] hover:text-white duration-500">SIGN UP</button>
+            </div>
+        </section>
+        <section id="logIn" class="duration-300 w-full h-[100vh]  flex-wrap bg-[#25343d] p-5 md:p-10 lg:py-[2%] lg:px-[15%] md:gap-10 absolute top-0 left-0  hidden">
+            <div class="w-full h-14 flex ">
+                <span id="moveToSignup" class="w-1/2 h-full flex justify-center items-center bg-[#435359] text-[#9fb3a6] cursor-pointer hover:bg-[#179c78] hover:text-white duration-500">Sign Up</span>
+                <span class="w-1/2 h-full flex justify-center items-center  bg-[#1ab088] text-white cursor-pointer hover:bg-[#179c78] hover:text-white duration-500">Log In</span>
+            </div>
+            <div class="w-full h-16 flex justify-center items-center">
+                <h1 class="text-white text-2xl md:text-3xl  lg:text-4xl">Log In</h1>
+            </div>
+            <div class="w-full flex flex-wrap md:gap-8 lg:gap-12">
+                
+                <div class="w-full flex flex-wrap h-10 md:h-14">
+                    <input id="loginEmail" class="inputLogin w-full bg-transparent border text-white ps-3 outline-none " type="text" placeholder="Email Address">
+                </div>
+                <div class="w-full flex flex-wrap h-10 md:h-14">
+                    <input id="loginPassword" class="inputLogin w-full bg-transparent border text-white ps-3 outline-none " type="text" placeholder="Password">
+                </div>
+                <span id="errorLogin" class="py-4 text-red-600"></span>
+            </div>
+            <div class="w-full flex justify-center items-center h-16">
+                <button id="loginButton" class="bg-[#1ab088] text-white w-full h-full text-2xl hover:bg-[#179c78] hover:text-white duration-500">LOG IN</button>
+            </div>
+        </section>
+        <section id="panel" class="w-full h-[100vh] absolute top-0 left-0 z-50 bg-[#25343d] hidden justify-center items-center">
+            <span id="closePanel" class="text-[#1ab088] absolute top-10 left-10 text-3xl cursor-pointer">X</span>
+            <div class="w-64 h-52 md:w-[400px] md:h-[400px] bg-[#1ab088] flex justify-center content-center gap-8 md:gap-16 flex-wrap" >
+                <span class="text-[#25343d] text-lg w-full flex justify-center items-center md:text-xl">Welcome</span>
+                <h1 id="panelName" class="text-[#25343d] text-2xl md:text-4xl w-full font-bold flex justify-center items-center">Ermia Razavi</h1>
+                <h2 id="panelEmail" class="text-[#25343d] text-lg md:text-xl" >ermia@gmail.com</h2>
+            </div>
+            <div></div>
+        </section>
+    </main>
+    <section class="w-full bg-[#25343d] border-t-[1px] border-[#1ab088]">
+        <div class=" flex flex-wrap py-[20px] px-[40px] ">
+            <h1 class="text-[#1ab088] h-[52px] w-[50%] flex justify-center items-center md:text-[24px]">Ermia Razavi
+            </h1>
+            <nav class="h-full w-[50%]">
+                <ul class="flex w-full h-full justify-center items-center gap-[5px]">
+                    <li class="w-[50px] h-[50px] flex justify-center items-center"><a
+                            class="w-full h-full flex justify-center items-center" href="https://www.linkedin.com/in/ermia-razavi-a611312a3/"><i
+                                class="w-full h-full flex justify-center items-center icon-linkedin text-[#1ab088] md:text-[20px] hover:bg-[#1ab088] hover:text-[#25343d] rounded-[50%] duration-[0.4s]"></i></a>
+                    </li>
+                    <li class="w-[50px] h-[50px] flex justify-center items-center"><a
+                            class="w-full h-full flex justify-center items-center" href="https://github.com/ErmiaRZV"><i
+                                class="w-full h-full flex justify-center items-center icon-github-circled text-[#1ab088] md:text-[20px] hover:bg-[#1ab088] hover:text-[#25343d] rounded-[50%] duration-[0.4s]"></i></a>
+                    </li>
+                    <li class="w-[50px] h-[50px] flex justify-center items-center"><a
+                            class="w-full h-full flex justify-center items-center" href="https://www.instagram.com/ermia_razavi.dev/?utm_source=ig_web_button_share_sheet"><i
+                                class="w-full h-full flex justify-center items-center icon-instagram  text-[#1ab088] md:text-[20px] hover:bg-[#1ab088] hover:text-[#25343d] rounded-[50%] duration-[0.4s]"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
